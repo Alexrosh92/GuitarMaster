@@ -1,0 +1,21 @@
+<div class="center hero-unit">
+  <div class="row-fluid">
+    <p><%= notice %></p>
+
+    <h3> <%= @accord.name %>  </h3>
+
+    <div class="span4">
+      <%= image_tag(@accord.picture_url, :size => "300x400") %>
+    </div>
+
+    <div class="span7">
+      <iframe width="560" height="315" src= "<%= @accord.video_url %>" frameborder="0" allowfullscreen></iframe>
+    </div>
+    </div>
+
+  <div class="row-fluid">
+    <%= link_to 'редактировать', edit_accord_path(@accord) %> |
+    <%= link_to 'удалить', @accord, method: :delete, data: { confirm: 'Are you sure?' } %>|
+    <%= link_to 'назад', accords_path %>
+  </div>
+</div>

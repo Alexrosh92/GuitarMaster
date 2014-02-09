@@ -1,0 +1,16 @@
+<div class="center hero-unit">
+<h1>Видеокурсы и разбор песен</h1>
+
+
+
+  <% @lessons.each do |lesson| %>
+      <div class="row-fluid">
+        <div class="span9 offset1 post_index">
+          <h3><%= link_to  lesson.name, lesson %></h3>
+          <p><%= truncate lesson.body, length: 300 %></p>
+        </div>
+      </div>
+  <% end %>
+
+  <%= link_to 'New Lesson', new_lesson_path %>
+</div>

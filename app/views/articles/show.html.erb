@@ -1,0 +1,16 @@
+<div class="center hero-unit">
+<p><%= notice %></p>
+
+<p>
+
+ <h3> <%= @article.name %>   </h3>
+</p>
+
+<p>
+
+  <%= @article.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

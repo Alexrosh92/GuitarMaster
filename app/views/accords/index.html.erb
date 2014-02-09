@@ -1,0 +1,20 @@
+<div class="center hero-unit">
+<h1>Таблица аккордов</h1>
+
+  <div class="row-fluid">
+<% @accords.each do |accord| %>
+
+      <div class="span2 offset1">
+        <h3><%= link_to  accord.name, accord %></h3>
+      </div>
+
+<% end %>
+  </div>
+
+
+
+
+
+<%= link_to 'New Accord', new_accord_path %>
+
+    </div>

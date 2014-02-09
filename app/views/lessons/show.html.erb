@@ -1,0 +1,18 @@
+<div class="center hero-unit">
+  <div class="row-fluid">
+    <div class="span6">
+      <h3> <%= @lesson.name %> </h3>
+    <%= @lesson.body %>
+    </div>
+
+  <div class="span5 offset1">
+    <iframe width="500" height="315" src= "<%= @lesson.video_url %>" frameborder="0" allowfullscreen></iframe>
+  </div>
+  </div>
+
+  <div class="row-fluid"><%= link_to 'редактировать', edit_lesson_path(@lesson) %> |
+    <%= link_to 'удалить', @lesson, method: :delete, data: { confirm: 'Are you sure?' } %>|
+    <%= link_to 'назад', lessons_path %>
+  </div>
+
+</div>

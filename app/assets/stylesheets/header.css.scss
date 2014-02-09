@@ -1,0 +1,35 @@
+header{
+  #logo {
+    float: left;
+    margin-right: 10px;
+    font-size: 1.7em;
+    color: #0096e0;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-top: 9px;
+    font-weight: bold;
+    line-height: 1;
+
+    &:hover {
+      color: #00b6e0;
+      text-decoration: none;
+    }
+
+    &:active{
+      color: #9300e0;
+    }
+  }
+
+  li{
+
+    &:hover {
+      background-color: #c423a7;  //цвет при наведении на пункт верхнего меню, в хедере
+      color: #fff;
+    }
+    &:active {
+      background-color: #339131;  //цвет при нахатии на пункт верхнего меню, в хедере
+      color: #fff;
+    }
+  }
+
+}
