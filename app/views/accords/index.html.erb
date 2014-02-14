@@ -2,19 +2,17 @@
 <h1>Таблица аккордов</h1>
 
   <div class="row-fluid">
-<% @accords.each do |accord| %>
+    <table>
 
-      <div class="span2 offset1">
+    <% @accords.each do |accord| %>
+
+          <tr>
         <h3><%= link_to  accord.name, accord %></h3>
-      </div>
+          </tr>
+    <% end %>
 
-<% end %>
+    </table>
+
   </div>
-
-
-
-
-
-<%= link_to 'New Accord', new_accord_path %>
-
-    </div>
+  <%= link_to 'New Accord', new_accord_path %>
+</div>

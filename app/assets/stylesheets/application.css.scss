@@ -11,3 +11,10 @@
 @import "bootstrap";
 @import 'header.css.scss';
 @import 'layouts.css.scss';
+
+footer {
+  border-top: 1px solid #ccc;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
