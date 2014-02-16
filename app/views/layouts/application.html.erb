@@ -7,26 +7,6 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
-  <script type="text/javascript">
-      ymaps.ready(init);
-      var myMap,
-              myPlacemark;
-
-      function init(){
-          myMap = new ymaps.Map ("map", {
-              center: [55.75, 37.65],
-              zoom: 15
-          });
-
-          myPlacemark = new ymaps.Placemark([55.74892, 37.6523], {
-              hintContent: 'Москва!',
-              balloonContent: 'Столица России'
-          });
-
-          myMap.geoObjects.add(myPlacemark);
-      }
-  </script>
-
 </head>
 <body>
 

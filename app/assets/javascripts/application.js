@@ -14,11 +14,31 @@
 //= require jquery_ujs
 //= require_tree .
 //= require jquery.ui.all
- /*
+
 $(function() {
-    $( "#accordion" ).accordion();
-});        */
-$(function() {
-var myId = $("#accordion");
-myId.accordion();
+    var myId = $("#accordion");
+    myId.accordion();
+
+    ymaps.ready(init);
+
+    var myMap,
+        myPlacemark;
+
+    function init(){
+        myMap = new ymaps.Map ("map", {
+            center: [55.75, 37.65],
+            zoom: 15
+        });
+
+        myPlacemark = new ymaps.Placemark([55.74892, 37.6523], {
+            hintContent: 'GuitarMaster',
+            balloonContent: 'здесь наш офис :)'
+        });
+
+        myMap.controls.add('mapTools');
+        myMap.controls.add('typeSelector');
+        myMap.controls.add('zoomControl');
+        myMap.geoObjects.add(myPlacemark);
+    }
+
 });
