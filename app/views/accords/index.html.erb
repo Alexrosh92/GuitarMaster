@@ -1,18 +1,21 @@
 <div class="center hero-unit">
-<h1>Таблица аккордов</h1>
+  <h1>Аккорды</h1>
 
-  <div class="row-fluid">
-    <table>
-
-    <% @accords.each do |accord| %>
-
-          <tr>
-        <h3><%= link_to  accord.name, accord %></h3>
-          </tr>
+  <div id="accordion">
+    <% @alfavit.each do |letter| %>
+        <h3><%=letter%></h3>
+        <div>
+          <% @accords.each do |accord| %>
+              <% if accord.name[0] == letter %>
+                  <div class="span2">
+                    <%= link_to  accord.name, accord %>
+                  </div>
+              <% end%>
+          <% end %>
+        </div>
     <% end %>
-
-    </table>
-
   </div>
+
   <%= link_to 'New Accord', new_accord_path %>
+
 </div>

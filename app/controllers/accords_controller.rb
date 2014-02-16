@@ -3,6 +3,7 @@ class AccordsController < ApplicationController
   # GET /accords.json
   def index
     @accords = Accord.all
+    @alfavit = ["A","C","D","E","F","G","H"]
 
     respond_to do |format|
       format.html # index.html.erb

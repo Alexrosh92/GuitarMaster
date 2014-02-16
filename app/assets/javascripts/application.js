@@ -13,3 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require jquery.ui.all
+ /*
+$(function() {
+    $( "#accordion" ).accordion();
+});        */
+$(function() {
+var myId = $("#accordion");
+myId.accordion();
+});

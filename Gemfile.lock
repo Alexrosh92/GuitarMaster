@@ -49,13 +49,15 @@ GEM
     jquery-rails (3.1.0)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-ui-rails (4.1.1)
+      railties (>= 3.1.0)
     json (1.8.1)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.8.4)
-    pg (0.12.2-x86-mingw32)
+    pg (0.17.1-x86-mingw32)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -112,6 +114,7 @@ DEPENDENCIES
   bootstrap-will_paginate (= 0.0.9)
   coffee-rails (~> 3.2.1)
   jquery-rails
+  jquery-ui-rails
   pg
   rails (= 3.2.16)
   sass-rails (~> 3.2.3)
