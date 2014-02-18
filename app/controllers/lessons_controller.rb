@@ -2,7 +2,7 @@ class LessonsController < ApplicationController
   # GET /lessons
   # GET /lessons.json
   def index
-    @lessons = Lesson.all
+    @lessons = Lesson.paginate(:page => params[:page], :per_page => 3)
 
     respond_to do |format|
       format.html # index.html.erb

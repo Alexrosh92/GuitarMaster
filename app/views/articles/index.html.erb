@@ -1,9 +1,6 @@
 <div class="center hero-unit">
 <h1>О гитарах и все, что с ними связано</h1>
 
-
-
-
   <% @articles.each do |article| %>
       <div class="row-fluid">
         <div class="span9 offset1 post_index">
@@ -12,7 +9,6 @@
         </div>
       </div>
   <% end %>
-  <br />
-
+  <%= will_paginate @articles %>
   <%= link_to 'New Article', new_article_path %>
 </div>

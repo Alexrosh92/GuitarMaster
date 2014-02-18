@@ -3,7 +3,7 @@ header{
     float: left;
     margin-right: 10px;
     font-size: 1.7em;
-    color: #61B594;
+    color: #C44E18;
     text-transform: uppercase;
     letter-spacing: -1px;
     padding-top: 9px;
@@ -31,6 +31,7 @@ header{
     background-repeat: repeat-x !important;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF4d751e', endColorstr='#FF2f4924', GradientType=0)!important;
     border-color: #252525 !important;
+
     nav {
       li{
         &:hover {
@@ -42,10 +43,13 @@ header{
       }
 
       a{
-      color: #C44E18 !important;
-      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-      &:hover,active {
-        color: #fff !important;  //цвет при наведении на пункт верхнего меню, в хедере
+        color: #61B594 !important;
+        font-size: 100%;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        &:hover,active {
+          color: #fff !important;  //цвет при наведении на пункт верхнего меню, в хедере
       }
     }
   }

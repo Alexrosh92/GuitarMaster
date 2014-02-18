@@ -1,8 +1,6 @@
 <div class="center hero-unit">
 <h1>Видеокурсы и разбор песен</h1>
 
-
-
   <% @lessons.each do |lesson| %>
       <div class="row-fluid">
         <div class="span9 offset1 post_index">
@@ -11,6 +9,6 @@
         </div>
       </div>
   <% end %>
-
+  <%= will_paginate @lessons %>
   <%= link_to 'New Lesson', new_lesson_path %>
 </div>

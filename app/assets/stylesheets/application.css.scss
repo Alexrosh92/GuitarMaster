@@ -13,7 +13,7 @@
 @import 'header.css.scss';
 @import 'layouts.css.scss';
 
-footer {
+footer{
   margin-top: 15px;
   padding-top: 15px;
   margin-bottom: 5px;
@@ -32,10 +32,10 @@ footer {
   background-color: #E6DEA5;
   a{
     text-decoration: none;
-    color: #C44E18 !important;
+    color: #b44e18 !important;
     &:hover, active {
       text-decoration: none;
-      color: #61B594 !important;
+      color: #C44E18 !important;
     }
   }
 }
@@ -43,4 +43,14 @@ footer {
 #map {
   width:500px;
   height:500px;
+}
+
+#modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.4);
 }
