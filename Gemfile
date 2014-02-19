@@ -28,6 +28,7 @@ end
 gem 'jquery-rails'
 
 gem "will_paginate"
+gem "auto_html"
 
 group :production do
   gem 'pg'
