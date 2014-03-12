@@ -16,6 +16,9 @@ GuitarMaster::Application.routes.draw do
   get '/contact', to: 'static_pages#contact'
   #get '/article', to: 'articles#index'
   get '/acord', to:'static_pages#acord'
+  get '/change_locale/:locale', to: 'application#change_locale',
+      as: 'change_locale'
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

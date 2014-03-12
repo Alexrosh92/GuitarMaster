@@ -20,6 +20,13 @@
   <div class="container-fluid">
     &copy; <%= Time.now.year %> AlexRosh
   </div>
+  <% I18n.locale == :ru ?
+                 locale = :en :
+                 locale = :ru %>
+
+    <%= link_to t('top_menu.change_locale'),
+                change_locale_url(locale) +
+                        "?return_to=#{CGI.escape(request.url)}" %>
 </footer>
 
 </body>
