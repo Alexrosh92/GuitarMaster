@@ -44,6 +44,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    dragonfly (1.0.3)
+      multi_json (~> 1.0)
+      rack
     erubis (2.7.0)
     execjs (2.0.2)
     hike (1.2.3)
@@ -119,6 +122,7 @@ DEPENDENCIES
   bootstrap-sass (= 2.3.2.2)
   bootstrap-will_paginate (= 0.0.9)
   coffee-rails (~> 3.2.1)
+  dragonfly (~> 1.0.3)
   jquery-rails
   jquery-ui-rails
   pg

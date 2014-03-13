@@ -29,6 +29,7 @@ gem 'jquery-rails'
 
 gem "will_paginate"
 gem "auto_html"
+gem 'dragonfly', "~>1.0.3"
 
 group :production do
   gem 'pg'

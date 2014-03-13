@@ -19,6 +19,16 @@
     <%= f.label :body %><br />
     <%= f.text_area :body %>
   </div>
+
+
+    <div class="mask-wrapper">
+      <div class="mask">
+        <input class="fileInputText" type="text" disabled>
+        <button class="send-file">Обзор</button>
+      </div>
+      <%= f.file_field :doc , class:"custom-file-input" %>
+    </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -6,6 +6,9 @@
 <p>
   <%= @article.body %>
 </p>
+  <p>
+    <%= @article.doc_uid %>
+  </p>
 
   <div class="row-fluid">
     <%= link_to 'редактировать', edit_article_path(@article) %> |
